@@ -5,9 +5,10 @@ class Anagrams
   def initialize (word)
     @word = word
   end
-  def compare 
-    @word 
+  def include 
+    puts "Ruby".include? "bury"
   end
+
 end
 
 
