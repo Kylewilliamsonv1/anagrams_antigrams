@@ -6,9 +6,7 @@ class Anagrams
     @word = word
   end
   def display_word (word)
-    if @word == @word
-      @word
-    end
+    @word 
   end
 end
 
