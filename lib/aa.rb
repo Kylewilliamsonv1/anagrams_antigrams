@@ -1,14 +1,12 @@
 require('pry')
 
 class Anagrams
-  attr_reader(:word)
-  def initialize (word)
-    @word = word
+  def initialize (words)
+    @words = words
   end
-  def include 
-    puts "Ruby".include? "bury"
+  def anagram_check 
+    words_array = @words.split(" ")
   end
-
 end
 
 
