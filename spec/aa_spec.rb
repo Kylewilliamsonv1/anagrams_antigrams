@@ -2,10 +2,9 @@ require 'rspec'
 require 'aa'
 
 describe('#anagrams') do
-  it("it should check if word1 and word2 contain the same letters") do
-    word1 = Anagrams.new("ruby")
-    word2 = Anagrams.new("bury")
-    expect(word1.letter_check(word2)).to(eq(true))
+  it("it should return the instance of word") do
+    word = Anagrams.new("ruby")
+    expect(word.word_check(word)).to(eq("ruby"))
   end
 end
 

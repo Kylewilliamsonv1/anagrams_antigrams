@@ -1,12 +1,14 @@
 require('pry')
 
 class Anagrams
-  attr_reader(:word1, :word2)
-  def initialize (word1)
-    @word1 = word1
-    @word2 = word2
+  attr_reader(:word)
+  def initialize (word)
+    @word = word
   end
-  def letter_check (word)
+  def word_check (word)
+    if @word == @word
+      @word
+    end
   end
 end
 
