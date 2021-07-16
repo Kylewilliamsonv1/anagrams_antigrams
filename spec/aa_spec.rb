@@ -3,9 +3,8 @@ require 'aa'
 
 describe('#anagrams') do
   it("it should return the instance of word") do
-    word1 = Anagrams.new("ruby")
-    word2 = Anagrams.new("bury")
-    expect(compare_word(word1,word2)).to(eq(true))
+    word = Anagrams.new("ruby")
+    expect(word.include?("bury")).to(eq(true))
   end
 end
 
