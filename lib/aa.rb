@@ -5,7 +5,7 @@ class Anagrams
   def initialize (word)
     @word = word
   end
-  def word_check (word)
+  def display_word (word)
     if @word == @word
       @word
     end
