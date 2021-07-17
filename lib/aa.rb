@@ -11,10 +11,13 @@ class Anagrams
       letter_array.push(a.split(""))
     end
     letter_array
+    if letter_arra
   end
-  
+
+
 end
 
+put letters into a key value hash.  then compare keys with includes
 
 
 
