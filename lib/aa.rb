@@ -14,7 +14,8 @@ class Anagrams
     end
     letter_array.each do |letter|
       letter.includes?(vowels)
-      return 
+      return
+    end 
   end
 
 
