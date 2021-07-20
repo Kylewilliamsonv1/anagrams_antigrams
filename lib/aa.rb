@@ -1,20 +1,23 @@
 require('pry')
 
 class Anagrams
-  def initialize (word1, word2, words)
-    @word1 = word1.downcase
-    @word2 = word2
+  def initialize (words)
     @words = words
   end
-  
+
   def anagram_check
+    vowels = [a,e,i,o,u]
     letter_array = []
     words_array = @words.split(" ")
-    words_array.each do |a|
-      letter_array.push(a.split(""))
+    words_array.each do |word|
+      letter_array.push(word.split(""))
     end
-    letter_array
+    letter_array.each do |letter|
+      letter.includes?(vowels)
+      return 
   end
+
+
 end
 
 

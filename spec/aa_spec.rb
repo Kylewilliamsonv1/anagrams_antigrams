@@ -3,8 +3,8 @@ require 'aa'
 
 describe('#anagrams') do
   it("it will check to see if the inputted word contains a vowel") do
-    word = Anagrams.new("ruby")
-    expect(word.check_vowel).to(eq(true))
+    words = Anagrams.new("ruby bury")
+    expect(words.anagram_check).to(eq(true))
   end
   it("it returns an array which elements contains an array of letters") do
     words = Anagrams.new("ruby bury")
