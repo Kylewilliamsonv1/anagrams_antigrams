@@ -8,6 +8,7 @@ class Anagrams
 
   def anagram_check
     letter_array = []
+    anagrams = 0
     words_array = @words.split(" ")
     words_array.each do |word|
       letter_array.push(word.split("").sort)
