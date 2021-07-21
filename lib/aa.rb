@@ -2,22 +2,28 @@ require('pry')
 
 class Anagrams
   def initialize (words)
-    @words = words
+    @words = words.downcase
   end
 
+
   def anagram_check
-    vowels = [a,e,i,o,u]
     letter_array = []
     words_array = @words.split(" ")
     words_array.each do |word|
-      letter_array.push(word.split(""))
+      letter_array.push(word.split("").sort)
     end
-    letter_array.each do |letter|
-      letter.includes?(vowels)
-      return
-    end 
+    letter_array
   end
 
+  # def anagram_check
+
+  #   hash = Hash.new
+  #   ("ruby bury").each_with_index { |item, index|
+  #     hash[item] = index
+  #   }
+  #   hash
+  # binding.pry
+  # end
 
 end
 
