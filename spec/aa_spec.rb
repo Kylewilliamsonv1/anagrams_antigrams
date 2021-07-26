@@ -34,7 +34,7 @@ describe('#anagrams') do
 
   it("will check if matched characters equal length, if so it will return true") do
     word = Anagrams.new("listen", "silent")
-    expect(word.character_check).to(eq(true))
+    expect(word.anagram_check).to(eq(true))
   end
 end
 

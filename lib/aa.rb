@@ -41,5 +41,11 @@ class Anagrams
     end
     matched_char
   end
+
+  def anagram_check 
+    if character_check() == @word1.length
+      true
+    end
+  end
 end
 
