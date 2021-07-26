@@ -45,14 +45,19 @@ class Anagrams
   end
 
   def anagram_check 
-    if character_check() == @word1.length
-      true
+    if character_check == @word1.length
+      "These words are anagrams."
     else
       false
     end
   end
 
-  
-
+  def antigram_check
+    if character_check == 0
+      "These words have no letter matches and are antigrams."
+    else
+      character_check
+    end
+  end
 end
 
