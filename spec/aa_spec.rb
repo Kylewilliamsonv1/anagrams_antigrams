@@ -17,7 +17,7 @@ describe('#anagrams') do
     expect(words.character_check).to(eq(4))
   end
 
-  it("will return false if characters don't match.") do
+  it("will return character count if characters don't match.") do
     words = Anagrams.new("ruby", "gem")
     expect(words.character_check).to(eq(0))
   end
