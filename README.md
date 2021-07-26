@@ -10,22 +10,22 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This program will check two inputted strings and compare them to see if they are anagrams or if the are antigrams.  An anagram is two strings matching in length and characters where as an antigram for the purpose of this appication is containing no letters that match._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone repo anagrams_antigrams off GitHub_
+* _Launch code editor_
+* _Open anagrams_antigrams file_
+* _Run command bundle install in the terminal_
+* _Run command Rspec to initiate the testing platform_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+_To set up this program the user will need to clone the repository to their desktop and then open it up with a code editor. Once opened the user will then need to run bundle install in the terminal to install the gems listed in the Gemfile. Once the file has been bundled the user will run Rspec to run the testing environment._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _UI is currently not built out_
+
 
 ## License
 
