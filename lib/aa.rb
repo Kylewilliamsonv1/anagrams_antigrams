@@ -2,8 +2,8 @@ require('pry')
 
 class Anagrams
   def initialize (word1, word2)
-    @word1 = word1.downcase.gsub(/[^A-Za-z0-9\s]/i, '')
-    @word2 = word2.downcase.gsub(/[^A-Za-z0-9\s]/i, '')
+    @word1 = word1.downcase.gsub(/[^A-Za-z]/, '')
+    @word2 = word2.downcase.gsub(/[^A-Za-z]/, '')
   end
 
   def are_words
@@ -13,30 +13,33 @@ class Anagrams
     end
   end
 
-  def anagram_check
-    letter_match = 0
-    words_array1 = @word1.split("").sort
-    words_array2 = @word2.split("").sort
-    words_array1.each do |w1|
-      words_array2.each do |w2|
-        if w1 == w2
-        letter_match += 1
-        end
+  def character_check
+    char_count1 = Hash.new
+    char_count2 = Hash.new
+    
+    @word1.split("").each do |character|
+      if not char_count1.include?(character)
+        char_count1[character] = 0
+      end
+
+      char_count1[character] += 1
+    end
+
+    @word2.split("").each do |character|
+      if not char_count2.include?(character)
+        char_count2[character] = 0
+      end
+
+      char_count2[character] += 1
+    end
+
+    matched_char = 0
+    char_count1.each_key do |key|
+      if char_count2.include?(key)
+        matched_char += char_count1[key] 
       end
     end
-    if letter_match == words_array1.length
-      "These words are anagrams."
-    end
+    matched_char
   end
 end
-
-
-
-
-
-
-
-
-
-
 
