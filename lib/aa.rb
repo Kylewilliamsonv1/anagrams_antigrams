@@ -10,6 +10,8 @@ class Anagrams
     vowel_count = @word1.count('aeiou')
     if vowel_count >= 1
       true
+    else
+      "You need to input actual words!" 
     end
   end
 
@@ -45,7 +47,12 @@ class Anagrams
   def anagram_check 
     if character_check() == @word1.length
       true
+    else
+      false
     end
   end
+
+  
+
 end
 
