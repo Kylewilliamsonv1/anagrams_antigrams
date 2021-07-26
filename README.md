@@ -10,7 +10,7 @@
 
 ## Description
 
-_This program will check two inputted strings and compare them to see if they are anagrams or if the are antigrams.  An anagram is two strings matching in length and characters where as an antigram for the purpose of this appication is containing no letters that match._
+_This program will check two inputted strings and compare them to see if they are anagrams or antigrams.  An anagram is two strings matching in length and characters where as an antigram for the purpose of this appication is containing no letters that match._
 
 ## Setup/Installation Requirements
 
